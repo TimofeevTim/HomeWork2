@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stelesheet" >
+	<style>
+		html, body {
+			height: 100%;
+			background: #b3d6b3;
+		}
+		.fieldset_wrapper{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		form {
+			border: 2px solid black;
+			height: auto;
+			width: 400px;
+			font-family: Tahoma;
+			padding: 10px 15px;
+			background: #789fa961;
+		}
+		.group {
+			padding: 5px;
+			margin: 3px
+		}
+		label {
+			text-align: center;
+			display:block;
+		}
+		.input_form {
+			margin-top: 10px;
+			text-align: center;
+			height: 30px;
+			border-radius: 20px/20px;
+			border: 2px solid #2d3b0f;
+			display: block;
+			width: 100%;
+			font-size: 20px;
+		}
+		input:focus {
+			border:2px solid black;
+			border-radius: 20px/20px;
+			outline: none;
+		}
+		h1 {
+			text-align: center;
+		}
+		.button_block {
+			text-align: center;			 
+		}
+		button {
+			display: inline-block;
+			font-size: 15px;
+			border-radius: 8px;
+			padding: 5px;
+			margin: 9px;
+			outline: none;
+			background-color: #ebebeb;
+			border:2px solid #000;
+			cursor: pointer;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+		button:hover{
+			background-color: #ccc;
+		}
+		button:active{
+			background-color: #14de52;
+		}
+		.checked_block {
+			margin: 0px;
+			display: inline;
+			width: 5px;
+		}
+		#idididi {
+			display: block;
+			height: 50px;
+			width: 100%;
+			resize: none;
+			border-radius: 30px;
+			margin-top: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="fieldset_wrapper">
+		<form>
+			<h1>Форма регистрации</h1>
+				<div class="group">
+					<label for="">Имя пользователя:</label>
+					<input class="input_form" type="text" placeholder="Никодим Петрович">
+				</div>
+				<div class="group">
+					<label for="">e-mail:</label>
+					<input class="input_form" type="e-mail">
+				</div>
+				<div class="group">
+					<label for="">Дата рождения:</label>
+					<input class="input_form" class="input_date" type="date">
+				</div>
+				<div class="group">
+					<label for="">Пароль:</label>
+					<input class="input_form"type="password">
+				</div>
+				<div class="group">
+					<label for="">Повторите пароль:</label>
+					<input class="input_form" type="password">
+				<div class="group">
+					<textarea id="idididi" placeholder="     Немного о себе:"></textarea> 
+				</div>
+			<div class="button_block">
+				<button>Регистрация</button>
+			</div>
+			<div>	
+				<input type="checkbox"id="check1">
+						<label class="checked_block" for="check1">Моё согласие на это дело</label>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
+
